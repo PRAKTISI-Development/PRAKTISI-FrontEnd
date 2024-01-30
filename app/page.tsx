@@ -1,16 +1,18 @@
-import ECommerce from "@/components/Dashboard/E-commerce";
-import { Metadata } from "next";
+import { Metadata } from 'next'
+import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
+import Calendar from '@/components/Calender'
+import Carousel from '@/components/Carousel'
 
 export const metadata: Metadata = {
-  title: "TailAdmin | Next.js E-commerce Dashboard Template",
-  description: "This is Home Blog page for TailAdmin Next.js",
-  // other metadata
-};
+  title: 'PRAKTISI | Dasbor'
+}
 
 export default function Home() {
   return (
     <>
-      <ECommerce />
+      <Breadcrumb pageName="Dasbor" />
+      <Carousel />
+      <Calendar />
     </>
-  );
+  )
 }
