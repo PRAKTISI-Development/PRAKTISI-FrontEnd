@@ -1,14 +1,8 @@
 'use client'
 
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import TableOne from "@/components/Tables/TableOne";
-import TableThree from "@/components/Tables/TableThree";
-import TableTwo from "@/components/Tables/TableTwo";
 
 import { Metadata } from "next";
-
-import { Product } from "@/types/product";
-import Image from "next/image";
 
 import React from 'react'
 import Select from 'react-select'
@@ -18,41 +12,6 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const productData: Product[] = [
-  {
-    image: "/images/product/product-01.png",
-    name: "Apple Watch Series 7",
-    category: "Electronics",
-    price: 296,
-    sold: 22,
-    profit: 45,
-  },
-  {
-    image: "/images/product/product-02.png",
-    name: "Macbook Pro M1",
-    category: "Electronics",
-    price: 546,
-    sold: 12,
-    profit: 125,
-  },
-  {
-    image: "/images/product/product-03.png",
-    name: "Dell Inspiron 15",
-    category: "Electronics",
-    price: 443,
-    sold: 64,
-    profit: 247,
-  },
-  {
-    image: "/images/product/product-04.png",
-    name: "HP Probook 450",
-    category: "Electronics",
-    price: 499,
-    sold: 72,
-    profit: 103,
-  },
-];
-
 const UsersPage = () => {
   return (
     <>
@@ -60,34 +19,38 @@ const UsersPage = () => {
 
       <div className="flex flex-col gap-10">
         <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-          <div className="grid grid-cols-2 gap-3 py-6 px-4 md:px-6 xl:px-7.5">
+          <div className="grid grid-cols-3 gap-3 items-end py-6 px-4 md:px-6 xl:px-7.5">
             <div>
-              <label className="mb-3 block text-black dark:text-white">
-                Kata kunci
-              </label>
               <input
                 type="text"
-                placeholder="Cari"
-                className="w-full rounded-lg border-[1.5px] bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:bg-form-input"
+                placeholder="Kata kunci"
+                className="w-full rounded-lg border-[1.5px] bg-transparent py-2 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:bg-form-input"
               />
             </div>
             <div>
-              <label className="mb-3 block text-black dark:text-white">
-                Peran
-              </label>
               <Select
                 isMulti
-                name="colors"
+                name="roles"
+                placeholder="Peran"
                 options={[
                   { value: 'PRAKTIKAN', label: 'PRAKTIKAN' },
                   { value: 'PRAKTISI', label: 'PRAKTISI' },
                 ]}
                 className="basic-multi-select"
+                styles={{
+                  control: (styles) => ({
+                    ...styles,
+                    paddingTop: '2px',
+                    paddingBottom: '2px',
+                    borderRadius: '8px',
+                    border: '1.5px solid rgb(226, 232, 240)',
+                  }),
+                }}
                 classNamePrefix="select"
               />
             </div>
-            <div className="col-span-2">
-              <button className="flex justify-center rounded bg-primary py-3 px-8 ml-auto font-medium text-gray">
+            <div>
+              <button className="flex justify-center rounded bg-primary py-2 px-5 font-medium text-gray">
                 Cari
               </button>
             </div>
