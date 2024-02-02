@@ -1,25 +1,20 @@
-'use client'
-
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-
-import { Metadata } from "next";
-
-import React from 'react'
-import Select from 'react-select'
+import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
+import { Metadata } from 'next'
+import Select from '@/components/Select'
 
 export const metadata: Metadata = {
-  title: "PRAKTISI Pengguna",
-  // other metadata
-};
+  title: 'PRAKTISI Pengguna',
+  description: ''
+}
 
-const UsersPage = () => {
+export default function UsersPage() {
   return (
     <>
       <Breadcrumb pageName="Pengguna" />
 
       <div className="flex flex-col gap-10">
-        <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-          <div className="grid grid-cols-3 gap-3 items-end py-6 px-4 md:px-6 xl:px-7.5">
+        <div className="card">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center mb-5">
             <div>
               <input
                 type="text"
@@ -29,67 +24,39 @@ const UsersPage = () => {
             </div>
             <div>
               <Select
-                isMulti
                 name="roles"
                 placeholder="Peran"
                 options={[
                   { value: 'PRAKTIKAN', label: 'PRAKTIKAN' },
                   { value: 'PRAKTISI', label: 'PRAKTISI' },
                 ]}
-                className="basic-multi-select"
-                styles={{
-                  control: (styles) => ({
-                    ...styles,
-                    paddingTop: '2px',
-                    paddingBottom: '2px',
-                    borderRadius: '8px',
-                    border: '1.5px solid rgb(226, 232, 240)',
-                  }),
-                }}
-                classNamePrefix="select"
               />
             </div>
             <div>
-              <button className="flex justify-center rounded bg-primary py-2 px-5 font-medium text-gray">
+              <button className="text-center text-gray font-medium bg-primary rounded py-2 px-5">
                 Cari
               </button>
             </div>
           </div>
 
-          <div className="grid grid-cols-6 border-t border-stroke py-4.5 px-4 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-            <div className="col-span-1 flex items-center">
+          <div className="overflow-x-scroll">
+            <div className="grid grid-cols-[repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
               <p className="font-medium">No</p>
-            </div>
-            <div className="col-span-1 hidden items-center sm:flex">
               <p className="font-medium">NIM</p>
-            </div>
-            <div className="col-span-4 flex items-center">
               <p className="font-medium">Nama</p>
-            </div>
-            <div className="col-span-1 flex items-center">
               <p className="font-medium">Peran</p>
             </div>
-          </div>
-          
-          <div
-            className="grid grid-cols-6 border-t border-stroke py-4.5 px-4 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5"
-          >
-            <div className="col-span-1 flex items-center">
+            
+            <div className="grid grid-cols-[repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
               <p className="text-sm text-black dark:text-white">
                 1
               </p>
-            </div>
-            <div className="col-span-1 flex items-center">
               <p className="text-sm text-black dark:text-white">
                 2109116095
               </p>
-            </div>
-            <div className="col-span-4 flex items-center">
               <p className="text-sm text-black dark:text-white">
                 Muhammad Novil Fahlevy
               </p>
-            </div>
-            <div className="col-span-1 flex items-center">
               <div className="flex gap-1">
                 <span className="bg-white border border-primary text-primary py-1 px-3 rounded-md text-xs">PRAKTIKAN</span>
                 <span className="bg-primary text-white py-1 px-3 rounded-md text-xs">PRAKTISI</span>
@@ -99,7 +66,5 @@ const UsersPage = () => {
         </div>
       </div>
     </>
-  );
-};
-
-export default UsersPage;
+  )
+}
