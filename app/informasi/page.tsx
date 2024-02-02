@@ -1,9 +1,8 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
 import { Metadata } from 'next'
-import Select from '@/components/Select'
 
 export const metadata: Metadata = {
-  title: 'PRAKTISI Informasi',
+  title: 'PRAKTISI | Informasi',
   description: ''
 }
 
@@ -14,7 +13,7 @@ export default function InformationPage() {
 
       <div className="flex flex-col gap-10">
         <div className="card">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center mb-5">
+          <div className="grid grid-cols-1 xs:grid-cols-[minmax(40%,1fr),minmax(10%,1fr),minmax(10%,1fr)] sm:grid-cols-[minmax(50%,1fr),minmax(10%,1fr),minmax(10%,1fr)] lg:grid-cols-[minmax(70%,1fr),minmax(10%,1fr),minmax(10%,1fr)] gap-3 items-center mb-5">
             <div>
               <input
                 type="text"
@@ -23,8 +22,13 @@ export default function InformationPage() {
               />
             </div>
             <div>
-              <button className="text-center text-gray font-medium bg-primary rounded py-2 px-5">
+              <button className="text-center text-gray font-medium bg-primary rounded py-2 w-full">
                 Cari
+              </button>
+            </div>
+            <div className="sm:justify-self-end">
+              <button className="text-center text-gray font-medium bg-success rounded py-2 px-4 w-full sm:w-auto">
+                Buat Informasi
               </button>
             </div>
           </div>
