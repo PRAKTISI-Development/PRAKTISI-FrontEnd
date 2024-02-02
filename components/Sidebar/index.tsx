@@ -125,12 +125,12 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               </li>
               {/* <!-- Menu Item Profile --> */}
 
-              {/* <!-- Menu Item Settings --> */}
+              {/* <!-- Menu Item Information --> */}
               <li>
                 <Link
-                  href="/settings"
+                  href="/informasi"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("settings") &&
+                    pathname.includes('informasi') &&
                     "bg-graydark dark:bg-meta-4"
                   }`}
                 >
@@ -138,14 +138,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   Informasi
                 </Link>
               </li>
-              {/* <!-- Menu Item Settings --> */}
+              {/* <!-- Menu Item Information --> */}
 
               {/* <!-- Menu Item Users --> */}
               <li>
                 <Link
                   href="/pengguna"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("pengguna") &&
+                    pathname.includes('pengguna') &&
                     "bg-graydark dark:bg-meta-4"
                   }`}
                 >
