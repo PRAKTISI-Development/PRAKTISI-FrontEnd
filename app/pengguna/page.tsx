@@ -39,7 +39,7 @@ export default function UsersPage() {
             </div>
           </div>
 
-          <div className="overflow-x-scroll">
+          <div className="flex flex-col items-start overflow-x-scroll">
             <div className="grid grid-cols-[repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
               <p className="font-medium">No</p>
               <p className="font-medium">NIM</p>
