@@ -1,6 +1,6 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
 import DeleteButton from '@/components/pages/informasi/DeleteButton'
-import { faPencilAlt, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -37,7 +37,7 @@ export default function InformationPage() {
             </div>
           </div>
 
-          <div className="overflow-x-scroll">
+          <div className="flex flex-col items-start overflow-x-scroll">
             <div className="grid grid-cols-[minmax(80px,80px),repeat(6,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
               <p className="font-medium">No</p>
               <p className="font-medium">Judul</p>
