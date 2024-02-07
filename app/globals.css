@@ -180,3 +180,7 @@ span.flatpickr-weekday,
 .map-btn .jvectormap-container .jvectormap-zoomin {
   right: 45px;
 }
+
+.ck-editor__editable_inline {
+  min-height: 400px;
+}

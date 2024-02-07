@@ -1,5 +1,9 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
+import DeleteButton from '@/components/pages/informasi/DeleteButton'
+import { faPencilAlt, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'PRAKTISI | Informasi',
@@ -27,23 +31,24 @@ export default function InformationPage() {
               </button>
             </div>
             <div className="sm:justify-self-end">
-              <button className="text-center text-gray font-medium bg-success rounded py-2 px-4 w-full sm:w-auto">
+              <Link href="/informasi/tambah" className="text-center text-gray font-medium bg-success rounded py-2 px-4 w-full sm:w-auto">
                 Buat Informasi
-              </button>
+              </Link>
             </div>
           </div>
 
           <div className="overflow-x-scroll">
-            <div className="grid grid-cols-[minmax(80px,80px),repeat(5,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+            <div className="grid grid-cols-[minmax(80px,80px),repeat(6,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
               <p className="font-medium">No</p>
               <p className="font-medium">Judul</p>
               <p className="font-medium">Deskripsi</p>
               <p className="font-medium">Tautan</p>
               <p className="font-medium">Tanggal</p>
               <p className="font-medium">Dibuat oleh</p>
+              <p className="font-medium">Aksi</p>
             </div>
             
-            <div className="grid grid-cols-[minmax(80px,80px),repeat(5,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+            <div className="grid grid-cols-[minmax(80px,80px),repeat(6,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
               <p className="text-sm text-black dark:text-white">
                 1
               </p>
@@ -62,6 +67,12 @@ export default function InformationPage() {
               <p className="text-sm text-black dark:text-white">
                 Muhammad Novil Fahlevy
               </p>
+              <div className="flex space-x-3.5">
+                <Link href="/informasi/edit/1">
+                  <FontAwesomeIcon icon={faPencilAlt} />
+                </Link>
+                <DeleteButton />
+              </div>
             </div>
           </div>
         </div>
