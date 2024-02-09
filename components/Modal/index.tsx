@@ -1,6 +1,8 @@
 import React, { Dispatch, Fragment, SetStateAction } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Select from '../Select';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 interface ModalProps {
   isOpen: boolean;
@@ -10,9 +12,11 @@ interface ModalProps {
 }
 
 export default function Modal({ isOpen, setIsOpen, title, children }: ModalProps) {
+  const closeModal = () => setIsOpen(false)
+
   return (
     <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={() => setIsOpen(false)}>
+      <Dialog as="div" className="relative z-10" onClose={closeModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -37,12 +41,19 @@ export default function Modal({ isOpen, setIsOpen, title, children }: ModalProps
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-full max-w-md transform bg-white p-6 text-left align-middle shadow-xl transition-all">
-                <Dialog.Title
-                  as="h3"
-                  className="text-lg font-medium leading-6 text-gray-900 mb-5"
-                >
-                  {title}
-                </Dialog.Title>
+                <div className="flex items-center justify-between mb-5">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900 mb-0"
+                  >
+                    {title}
+                  </Dialog.Title>
+                  <FontAwesomeIcon
+                    cursor="pointer"
+                    icon={faClose}
+                    onClick={closeModal}
+                  />
+                </div>
 
                 {children}
               </Dialog.Panel>
