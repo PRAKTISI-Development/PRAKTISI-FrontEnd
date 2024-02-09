@@ -1,60 +1,65 @@
-import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
+import React, { useEffect, useRef, useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import Image from "next/image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendar, faDashboard, faGraduationCap, faInfoCircle, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faClose, faDashboard, faGraduationCap, faInfoCircle, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 interface SidebarProps {
-  sidebarOpen: boolean;
-  setSidebarOpen: (arg: boolean) => void;
+  sidebarOpen: boolean
+  setSidebarOpen: (arg: boolean) => void
 }
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
-  const trigger = useRef<any>(null);
-  const sidebar = useRef<any>(null);
+  const trigger = useRef<any>(null)
+  const sidebar = useRef<any>(null)
 
-  let storedSidebarExpanded = "true";
+  let storedSidebarExpanded = "true"
   const [sidebarExpanded, setSidebarExpanded] = useState(
     storedSidebarExpanded === null ? false : storedSidebarExpanded === "true"
-  );
+  )
 
   // close on click outside
   useEffect(() => {
     const clickHandler = ({ target }: MouseEvent) => {
-      if (!sidebar.current || !trigger.current) return;
-      if (
-        !sidebarOpen ||
-        sidebar.current.contains(target) ||
-        trigger.current.contains(target)
-      )
-        return;
-      setSidebarOpen(false);
-    };
-    document.addEventListener("click", clickHandler);
-    return () => document.removeEventListener("click", clickHandler);
-  });
+      if (!sidebar.current || !trigger.current) return
+
+      if (!sidebarOpen || sidebar.current.contains(target) || trigger.current.contains(target)) {
+        return
+      }
+
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        return
+      }
+
+      setSidebarOpen(false)
+    }
+
+    document.addEventListener("click", clickHandler)
+
+    return () => document.removeEventListener("click", clickHandler)
+  })
 
   // close if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }: KeyboardEvent) => {
-      if (!sidebarOpen || keyCode !== 27) return;
-      setSidebarOpen(false);
-    };
-    document.addEventListener("keydown", keyHandler);
-    return () => document.removeEventListener("keydown", keyHandler);
-  });
+      if (!sidebarOpen || keyCode !== 27) return
+      setSidebarOpen(false)
+    }
+    document.addEventListener("keydown", keyHandler)
+    return () => document.removeEventListener("keydown", keyHandler)
+  })
 
   useEffect(() => {
-    localStorage.setItem("sidebar-expanded", sidebarExpanded.toString());
+    localStorage.setItem("sidebar-expanded", sidebarExpanded.toString())
     if (sidebarExpanded) {
-      document.querySelector("body")?.classList.add("sidebar-expanded");
+      document.querySelector("body")?.classList.add("sidebar-expanded")
     } else {
-      document.querySelector("body")?.classList.remove("sidebar-expanded");
+      document.querySelector("body")?.classList.remove("sidebar-expanded")
     }
-  }, [sidebarExpanded]);
+  }, [sidebarExpanded])
 
   return (
     <aside
@@ -73,6 +78,16 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             alt="Logo"
           />
         </Link>
+
+        <button
+          ref={trigger}
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          aria-controls="sidebar"
+          aria-expanded={sidebarOpen}
+          className="block lg:hidden"
+        >
+          <FontAwesomeIcon icon={faClose} size="xl" />
+        </button>
       </div>
       {/* <!-- SIDEBAR HEADER --> */}
 
@@ -160,7 +175,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         {/* <!-- Sidebar Menu --> */}
       </div>
     </aside>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
