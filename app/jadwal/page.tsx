@@ -1,11 +1,10 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
 import DeleteButton from '@/components/pages/schedule/DeleteButton'
 import FilterButton from '@/components/pages/schedule/FilterButton'
-import { faAdd, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import { faAdd, faEye, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { useState } from 'react'
 
 export const metadata: Metadata = {
   title: 'PRAKTISI | Jadwal',
@@ -63,11 +62,14 @@ export default function InformationPage() {
               <p className="text-sm text-black dark:text-white">
                 HyperText Markup Language (HTML)
               </p>
-              <div className="flex space-x-3.5">
+              <div className="flex items-center space-x-3.5">
                 <Link href="/jadwal/edit/1">
                   <FontAwesomeIcon icon={faPencilAlt} />
                 </Link>
                 <DeleteButton />
+                <Link href="/jadwal/detail/1">
+                  <FontAwesomeIcon icon={faEye} />
+                </Link>
               </div>
             </div>
           </div>
