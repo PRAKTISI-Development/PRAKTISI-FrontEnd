@@ -2,6 +2,8 @@ import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
 import React from 'react'
 import { Metadata } from 'next'
 import Select from '@/components/Select'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPencil } from '@fortawesome/free-solid-svg-icons'
 
 export const metadata: Metadata = {
   title: 'PRAKTISI | Mata Kuliah',
@@ -44,9 +46,10 @@ export default function AddInformationPage() {
                   ]}
                 />
               </div>
-
-              <button type="submit" className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray">
-                Edit Mata Kuliah
+              
+              <button type="submit" className="flex w-full justify-center items-center rounded bg-primary p-3 font-medium text-gray">
+                <FontAwesomeIcon icon={faPencil} />
+                <span className="ml-3">Edit mata kuliah</span>
               </button>
             </div>
           </form>

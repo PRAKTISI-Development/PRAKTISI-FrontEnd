@@ -2,6 +2,8 @@
 
 import Modal from '@/components/Modal'
 import Select from '@/components/Select';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Dispatch, SetStateAction } from 'react'
 
 interface FilterScheduleModalProps {
@@ -30,7 +32,10 @@ export default function FilterScheduleModal({ isOpen, setIsOpen }: FilterSchedul
         />
       </div>
 
-      <button type="button" className="text-center text-gray font-medium bg-primary rounded py-2 px-4">Cari</button>
+      <button type="button" className="text-center text-gray font-medium bg-primary rounded py-2 px-4">
+        <FontAwesomeIcon icon={faSearch} />
+        <span className="ml-3">Cari</span>
+      </button>
     </Modal>
   )
 }
