@@ -14,15 +14,15 @@ export default function UsersPage() {
 
       <div className="flex flex-col gap-10">
         <div className="card">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center mb-5">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 gap-3 items-center mb-5">
+            <div className="sm:col-span-2 md:col-span-1">
               <input
                 type="text"
                 placeholder="Kata kunci"
                 className="w-full rounded-lg border-[1.5px] bg-transparent py-2 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:bg-form-input"
               />
             </div>
-            <div>
+            <div className="sm:col-span-2 md:col-span-1">
               <Select
                 name="roles"
                 placeholder="Peran"
@@ -32,14 +32,14 @@ export default function UsersPage() {
                 ]}
               />
             </div>
-            <div>
-              <button className="text-center text-gray font-medium bg-primary rounded py-2 px-5">
+            <div className="sm:col-span-4 md:col-span-1">
+              <button className="text-center text-gray font-medium bg-primary rounded py-2 px-5 w-full md:w-auto">
                 Cari
               </button>
             </div>
           </div>
 
-          <div className="flex flex-col items-start overflow-x-scroll">
+          <div className="flex flex-col items-start overflow-x-scroll lg:items-stretch lg:overflow-x-visible">
             <div className="grid grid-cols-[repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
               <p className="font-medium">No</p>
               <p className="font-medium">NIM</p>

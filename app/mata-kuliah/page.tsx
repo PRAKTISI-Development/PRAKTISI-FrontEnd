@@ -17,7 +17,7 @@ export default function SubjectPage() {
 
       <div className="flex flex-col gap-10">
         <div className="card">
-          <div className="grid grid-cols-1 xs:grid-cols-[minmax(40%,1fr),minmax(10%,1fr),minmax(20%,1fr)] sm:grid-cols-[minmax(50%,1fr),minmax(10%,1fr),minmax(30%,1fr)] lg:grid-cols-[minmax(60%,1fr),minmax(10%,1fr),minmax(10%,1fr)] gap-3 items-center mb-5">
+          <div className="grid grid-cols-1 sm:grid-cols-[50%,20%,1fr] md:grid-cols-[60%,10%,1fr] gap-3 items-center mb-5">
             <div>
               <input
                 type="text"
