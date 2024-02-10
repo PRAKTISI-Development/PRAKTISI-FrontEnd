@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: ''
 }
 
-export default function InformationPage() {
+export default function SubjectPage() {
   return (
     <>
       <Breadcrumb pageName="Mata Kuliah" />
