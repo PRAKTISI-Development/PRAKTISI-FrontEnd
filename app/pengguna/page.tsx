@@ -1,6 +1,8 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
 import { Metadata } from 'next'
 import Select from '@/components/Select'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export const metadata: Metadata = {
   title: 'PRAKTISI Pengguna',
@@ -34,7 +36,8 @@ export default function UsersPage() {
             </div>
             <div className="sm:col-span-4 md:col-span-1">
               <button className="text-center text-gray font-medium bg-primary rounded py-2 px-5 w-full md:w-auto">
-                Cari
+                <FontAwesomeIcon icon={faSearch} />
+                <span className="ml-3">Cari</span>
               </button>
             </div>
           </div>

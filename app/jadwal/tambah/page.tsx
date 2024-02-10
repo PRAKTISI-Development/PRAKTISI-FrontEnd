@@ -3,6 +3,8 @@ import React from 'react'
 import { Metadata } from 'next'
 import Editor from '@/components/Editor'
 import Select from '@/components/Select'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAdd } from '@fortawesome/free-solid-svg-icons'
 
 export const metadata: Metadata = {
   title: 'PRAKTISI | Jadwal',
@@ -99,8 +101,9 @@ export default function AddInformationPage() {
                 <Editor />
               </div>
 
-              <button type="submit" className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray">
-                Buat Jadwal
+              <button type="submit" className="flex w-full justify-center items-center rounded bg-primary p-3 font-medium text-gray">
+                <FontAwesomeIcon icon={faAdd} />
+                <span className="ml-3">Buat Jadwal</span>
               </button>
             </div>
           </form>

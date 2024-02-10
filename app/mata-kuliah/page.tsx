@@ -1,5 +1,7 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
 import DeleteButton from '@/components/pages/subject/DeleteButton'
+import { faAdd, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -25,12 +27,14 @@ export default function SubjectPage() {
             </div>
             <div>
               <button className="text-center text-gray font-medium bg-primary rounded py-2 w-full">
-                Cari
+                <FontAwesomeIcon icon={faSearch} />
+                <span className="ml-3">Cari</span>
               </button>
             </div>
             <div className="sm:justify-self-end">
-              <Link href="/mata-kuliah/tambah" className="text-center text-gray font-medium bg-success rounded py-2 px-4 w-full sm:w-full">
-                Buat Mata Kuliah
+              <Link href="/mata-kuliah/tambah" className="text-center text-gray font-medium bg-success rounded py-2 px-4 w-full sm:w-full block">
+                <FontAwesomeIcon icon={faAdd} />
+                <span className="ml-3">Buat mata kuliah</span>
               </Link>
             </div>
           </div>

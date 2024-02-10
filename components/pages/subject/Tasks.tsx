@@ -12,7 +12,7 @@ export default function Tasks() {
           <h4 className="text-title-sm2 font-bold text-black dark:text-white">
             Tugas
           </h4>
-          <button className="text-center text-gray font-medium bg-primary rounded py-2 px-5 w-auto">
+          <button className="text-center text-gray font-medium bg-success rounded py-2 px-5 w-auto block">
             <FontAwesomeIcon icon={faAdd} />
             <span className="ml-3">Buat Tugas</span>
           </button>
@@ -20,8 +20,11 @@ export default function Tasks() {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="card">
-          <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">Mini Project 1</h4>
+        <div className="card flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-center sm:text-start mb-5 sm:mb-0">
+            <h4 className="text-xl font-semibold text-black line-clamp-2">Proyek Akhir</h4>
+            <small>Diunggah pada 19 Februari 2024 21:30</small>
+          </div>
           <div className="flex items-center space-x-3.5">
             <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
               Edit
@@ -32,8 +35,11 @@ export default function Tasks() {
             </Link>
           </div>
         </div>
-        <div className="card">
-          <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">Mini Project 2</h4>
+        <div className="card flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-center sm:text-start mb-5 sm:mb-0">
+            <h4 className="text-xl font-semibold text-black line-clamp-2">Mini Project 3</h4>
+            <small>Diunggah pada 19 Februari 2024 21:30</small>
+          </div>
           <div className="flex items-center space-x-3.5">
             <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
               Edit
@@ -44,8 +50,11 @@ export default function Tasks() {
             </Link>
           </div>
         </div>
-        <div className="card">
-          <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">Mini Project 3</h4>
+        <div className="card flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-center sm:text-start mb-5 sm:mb-0">
+            <h4 className="text-xl font-semibold text-black line-clamp-2">Mini Project 2</h4>
+            <small>Diunggah pada 19 Februari 2024 21:30</small>
+          </div>
           <div className="flex items-center space-x-3.5">
             <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
               Edit
@@ -56,8 +65,11 @@ export default function Tasks() {
             </Link>
           </div>
         </div>
-        <div className="card">
-          <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">Proyek Akhir</h4>
+        <div className="card flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-center sm:text-start mb-5 sm:mb-0">
+            <h4 className="text-xl font-semibold text-black line-clamp-2">Mini Project 1</h4>
+            <small>Diunggah pada 19 Februari 2024 21:30</small>
+          </div>
           <div className="flex items-center space-x-3.5">
             <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
               Edit

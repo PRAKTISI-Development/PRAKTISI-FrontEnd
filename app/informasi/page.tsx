@@ -1,6 +1,6 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
-import DeleteButton from '@/components/pages/informasi/DeleteButton'
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import DeleteButton from '@/components/pages/information/DeleteButton'
+import { faAd, faAdd, faPencilAlt, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -27,12 +27,14 @@ export default function InformationPage() {
             </div>
             <div>
               <button className="text-center text-gray font-medium bg-primary rounded py-2 w-full">
-                Cari
+                <FontAwesomeIcon icon={faSearch} />
+                <span className="ml-3">Cari</span>
               </button>
             </div>
             <div className="sm:justify-self-end">
-              <Link href="/informasi/tambah" className="text-center text-gray font-medium bg-success rounded py-2 px-4 w-full sm:w-auto">
-                Buat Informasi
+              <Link href="/informasi/tambah" className="text-center text-gray font-medium bg-success rounded py-2 px-4 w-full sm:w-auto block">
+                <FontAwesomeIcon icon={faAdd} />
+                <span className="ml-3">Buat Informasi</span>
               </Link>
             </div>
           </div>
