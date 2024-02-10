@@ -18,6 +18,7 @@ export default function InformationPage() {
       <Breadcrumb
         pageName="Jadwal"
         pages={['Jadwal', 'Detail']}
+        previousPageUrl="/jadwal"
       />
 
       <div className="card mb-5">

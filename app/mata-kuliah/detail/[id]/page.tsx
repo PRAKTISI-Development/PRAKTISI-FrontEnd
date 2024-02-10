@@ -10,7 +10,11 @@ export const metadata: Metadata = {
 export default function InformationPage() {
   return (
     <>
-      <Breadcrumb pageName="PPW A2 2022" pages={['Mata Kuliah', 'PPW A2 2022' ]} />
+      <Breadcrumb
+        pageName="PPW A2 2022"
+        pages={['Mata Kuliah', 'PPW A2 2022' ]}
+        previousPageUrl="/mata-kuliah"
+      />
       <TaskTabs />
     </>
   )
