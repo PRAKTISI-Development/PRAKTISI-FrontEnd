@@ -188,18 +188,16 @@ span.flatpickr-weekday,
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 10px;
-  height: 8px;
+  height: 5px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 5px;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #d6dee1;
   border-radius: 14px;
-  border: 3px solid #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb:hover {

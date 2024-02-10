@@ -126,19 +126,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               </li>
               {/* <!-- Menu Item Schedules --> */}
 
-              {/* <!-- Menu Item Profile --> */}
+              {/* <!-- Menu Item Subject --> */}
               <li>
                 <Link
-                  href="/profile"
+                  href="/mata-kuliah"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("profile") && "bg-graydark dark:bg-meta-4"
+                    pathname.includes("mata-kuliah") && "bg-graydark dark:bg-meta-4"
                   }`}
                 >
                   <FontAwesomeIcon icon={faGraduationCap} />
                   Mata Kuliah
                 </Link>
               </li>
-              {/* <!-- Menu Item Profile --> */}
+              {/* <!-- Menu Item Subject --> */}
 
               {/* <!-- Menu Item Information --> */}
               <li>
