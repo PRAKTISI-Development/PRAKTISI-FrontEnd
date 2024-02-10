@@ -12,7 +12,11 @@ export const metadata: Metadata = {
 export default function AddInformationPage() {
   return (
     <>
-      <Breadcrumb pageName="Edit Jadwal" />
+      <Breadcrumb
+        pageName="Edit Jadwal"
+        pages={['Jadwal', 'Edit']}
+        previousPageUrl="/jadwal"
+      />
 
       <div className="flex flex-col gap-9">
         <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
