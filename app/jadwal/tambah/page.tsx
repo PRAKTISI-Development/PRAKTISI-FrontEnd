@@ -14,7 +14,7 @@ export default function AddInformationPage() {
     <>
       <Breadcrumb
         pageName="Buat Jadwal"
-        pages={['Jadwal', 'Tambah jadwal']}
+        pages={['Jadwal', 'Buat jadwal']}
         previousPageUrl="/jadwal"
       />
 
