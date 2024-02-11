@@ -44,6 +44,12 @@ export default function InformationPage() {
       </div>
 
       <div className="card">
+        <div className="mb-6 flex justify-between items-center">
+          <h4 className="text-title-sm2 font-bold text-black dark:text-white">
+            Kehadiran
+          </h4>
+        </div>
+
         <div className="flex flex-col items-start overflow-x-scroll lg:items-stretch lg:overflow-x-visible">
           <div className="grid grid-cols-[minmax(80px,80px),minmax(300px,1fr),minmax(300px,1fr),minmax(300px,1fr)] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
             <p className="font-medium">No</p>

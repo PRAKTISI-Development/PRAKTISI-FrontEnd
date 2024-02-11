@@ -22,7 +22,7 @@ export default function Schedules() {
       <div className="flex flex-col gap-5">
         <div className="card flex flex-col sm:flex-row justify-between items-center">
           <div className="text-center sm:text-start mb-5 sm:mb-0">
-            <h4 className="text-xl font-semibold text-black line-clamp-1">Pengenalan Web</h4>
+            <h4 className="text-xl font-semibold text-black line-clamp-1">Pertemuan 1</h4>
             <small>Pertemuan pada 19 Februari 2024 21:30</small>
           </div>
           <div className="flex items-center space-x-3.5">
