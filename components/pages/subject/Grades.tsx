@@ -4,7 +4,13 @@ export default function Grades() {
   return (
     <>
       <div className="card mb-5">
-        <div className="flex items-start gap-5 border-b border-stroke dark:border-strokedark sm:gap-10 overflow-x-scroll">
+        <div className="mb-6 flex justify-between items-center">
+          <h4 className="text-title-sm2 font-bold text-black dark:text-white">
+            Tugas-tugas
+          </h4>
+        </div>
+
+        <div className="flex items-start gap-5 border-b border-stroke dark:border-strokedark sm:gap-0 overflow-x-scroll">
           <a className="py-4 text-sm font-medium hover:text-primary md:text-base text-primary min-w-[200px]" href="#">
             Nilai Akhir
           </a>
@@ -38,7 +44,7 @@ export default function Grades() {
         
         <div className="flex flex-col items-start overflow-x-scroll">
           <div
-            className="grid grid-cols-[minmax(80px,80px),repeat(9,minmax(300px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+            className="grid grid-cols-[minmax(80px,80px),repeat(9,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
             <p className="font-medium">No</p>
             <p className="font-medium">NIM</p>
             <p className="font-medium">Nama</p>
@@ -52,7 +58,7 @@ export default function Grades() {
           </div>
 
           <div
-            className="grid grid-cols-[minmax(80px,80px),repeat(9,minmax(300px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+            className="grid grid-cols-[minmax(80px,80px),repeat(9,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
             <p className="text-sm text-black dark:text-white">
               1
             </p>

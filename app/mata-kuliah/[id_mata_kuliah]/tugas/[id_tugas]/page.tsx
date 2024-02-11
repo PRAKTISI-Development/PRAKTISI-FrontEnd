@@ -45,7 +45,7 @@ export default function TaskPage() {
         </div>
 
         <div className="flex flex-col items-start overflow-x-scroll">
-          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5 lg:w-full">
             <p className="font-medium">No</p>
             <p className="font-medium">NIM</p>
             <p className="font-medium">Nama</p>
@@ -53,7 +53,7 @@ export default function TaskPage() {
             <p className="font-medium">Aksi</p>
           </div>
           
-          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5 lg:w-full">
             <p className="text-sm text-black dark:text-white">
               1
             </p>

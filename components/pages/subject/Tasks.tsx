@@ -8,9 +8,9 @@ export default function Tasks() {
   return (
     <>
       <div className="card mb-5">
-        <div className="flex justify-between items-center">
-          <h4 className="text-title-sm2 font-bold text-black dark:text-white">
-            Tugas
+        <div className="flex flex-col items-start sm:flex-row sm:justify-between sm:items-center">
+          <h4 className="text-title-sm2 font-bold text-black dark:text-white mb-5 sm:mb-0">
+            Tugas baru (1), tugas selesai (3)
           </h4>
           <Link className="text-center text-gray font-medium bg-success rounded py-2 px-5 w-auto block" href="/mata-kuliah/1/tugas/tambah">
             <FontAwesomeIcon icon={faAdd} />
