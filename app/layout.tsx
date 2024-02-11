@@ -1,28 +1,29 @@
-"use client";
-import "./globals.css";
-import "./data-tables-css.css";
-import "./satoshi.css";
-import { useState, useEffect } from "react";
-import Loader from "@/components/common/Loader";
+'use client'
 
-import Sidebar from "@/components/Sidebar";
-import Header from "@/components/Header";
+import './globals.css'
+import './data-tables-css.css'
+import './satoshi.css'
+import { useState, useEffect } from 'react'
+import Loader from '@/components/common/Loader'
+
+import Sidebar from '@/components/Sidebar'
+import Header from '@/components/Header'
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
+    setTimeout(() => setLoading(false), 1000)
+  }, [])
 
   return (
-    <html lang="en">
+    <html lang="id">
       <body suppressHydrationWarning={true}>
         <div className="dark:bg-boxdark-2 dark:text-bodydark">
           {loading ? (
@@ -59,5 +60,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  );
+  )
 }
