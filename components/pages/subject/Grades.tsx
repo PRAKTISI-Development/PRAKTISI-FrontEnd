@@ -4,6 +4,12 @@ export default function Grades() {
   return (
     <>
       <div className="card mb-5">
+        <div className="mb-6 flex justify-between items-center">
+          <h4 className="text-title-sm2 font-bold text-black dark:text-white">
+            Tugas-tugas
+          </h4>
+        </div>
+
         <div className="flex items-start gap-5 border-b border-stroke dark:border-strokedark sm:gap-10 overflow-x-scroll">
           <a className="py-4 text-sm font-medium hover:text-primary md:text-base text-primary min-w-[200px]" href="#">
             Nilai Akhir
