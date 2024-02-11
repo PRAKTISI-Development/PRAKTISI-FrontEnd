@@ -70,7 +70,7 @@ export default function InformationPage() {
                 Muhammad Novil Fahlevy
               </p>
               <div className="flex space-x-3.5">
-                <Link href="/informasi/edit/1">
+                <Link href="/informasi/1/edit">
                   <FontAwesomeIcon icon={faPencilAlt} />
                 </Link>
                 <DeleteButton />

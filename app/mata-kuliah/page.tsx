@@ -44,7 +44,7 @@ export default function SubjectPage() {
           <div className="card">
             <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">PPW A2 2022</h4>
             <div className="flex items-center space-x-3.5">
-              <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1/edit">
                 Edit
               </Link>
               <DeleteButton />
@@ -56,7 +56,7 @@ export default function SubjectPage() {
           <div className="card">
             <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">PPW A2 2022</h4>
             <div className="flex items-center space-x-3.5">
-              <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1/edit">
                 Edit
               </Link>
               <DeleteButton />
@@ -68,7 +68,7 @@ export default function SubjectPage() {
           <div className="card">
             <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">PPW A2 2022</h4>
             <div className="flex items-center space-x-3.5">
-              <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1/edit">
                 Edit
               </Link>
               <DeleteButton />
@@ -80,7 +80,7 @@ export default function SubjectPage() {
           <div className="card">
             <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">PPW A2 2022</h4>
             <div className="flex items-center space-x-3.5">
-              <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1/edit">
                 Edit
               </Link>
               <DeleteButton />
@@ -92,7 +92,7 @@ export default function SubjectPage() {
           <div className="card">
             <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">PPW A2 2022</h4>
             <div className="flex items-center space-x-3.5">
-              <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1/edit">
                 Edit
               </Link>
               <DeleteButton />
@@ -104,7 +104,7 @@ export default function SubjectPage() {
           <div className="card">
             <h4 className="mb-3 text-xl font-semibold text-black line-clamp-2">PPW A2 2022</h4>
             <div className="flex items-center space-x-3.5">
-              <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1/edit">
                 Edit
               </Link>
               <DeleteButton />
