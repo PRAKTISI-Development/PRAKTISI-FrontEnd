@@ -90,7 +90,8 @@ export default function LoginPage() {
                 <div className="relative z-20 bg-white dark:bg-form-input">
                   <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
                     <option value="" disabled selected>Pilih</option>
-                    <option value="Praktisi/Praktikan">Praktikan/Praktisi</option>
+                    <option value="Praktisi">Praktisi</option>
+                    <option value="Praktikan">Praktikan</option>
                     <option value="Dosen">Dosen</option>
                   </select>
                   <span className="absolute top-1/2 right-4 z-10 -translate-y-1/2">
