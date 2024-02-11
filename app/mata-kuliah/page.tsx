@@ -48,7 +48,7 @@ export default function SubjectPage() {
                 Edit
               </Link>
               <DeleteButton />
-              <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1">
                 Lihat Lengkap
               </Link>
             </div>
@@ -60,7 +60,7 @@ export default function SubjectPage() {
                 Edit
               </Link>
               <DeleteButton />
-              <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1">
                 Lihat Lengkap
               </Link>
             </div>
@@ -72,7 +72,7 @@ export default function SubjectPage() {
                 Edit
               </Link>
               <DeleteButton />
-              <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1">
                 Lihat Lengkap
               </Link>
             </div>
@@ -84,7 +84,7 @@ export default function SubjectPage() {
                 Edit
               </Link>
               <DeleteButton />
-              <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1">
                 Lihat Lengkap
               </Link>
             </div>
@@ -96,7 +96,7 @@ export default function SubjectPage() {
                 Edit
               </Link>
               <DeleteButton />
-              <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1">
                 Lihat Lengkap
               </Link>
             </div>
@@ -108,7 +108,7 @@ export default function SubjectPage() {
                 Edit
               </Link>
               <DeleteButton />
-              <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+              <Link className="hover:text-primary" href="/mata-kuliah/1">
                 Lihat Lengkap
               </Link>
             </div>

@@ -12,10 +12,10 @@ export default function Tasks() {
           <h4 className="text-title-sm2 font-bold text-black dark:text-white">
             Tugas
           </h4>
-          <button className="text-center text-gray font-medium bg-success rounded py-2 px-5 w-auto block">
+          <Link className="text-center text-gray font-medium bg-success rounded py-2 px-5 w-auto block" href="/mata-kuliah/1/tugas/tambah">
             <FontAwesomeIcon icon={faAdd} />
             <span className="ml-3">Buat Tugas</span>
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -26,11 +26,11 @@ export default function Tasks() {
             <small>Diunggah pada 19 Februari 2024 21:30</small>
           </div>
           <div className="flex items-center space-x-3.5">
-            <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1/edit">
               Edit
             </Link>
             <DeleteButton />
-            <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1">
               Lihat Lengkap
             </Link>
           </div>
@@ -41,11 +41,11 @@ export default function Tasks() {
             <small>Diunggah pada 19 Februari 2024 21:30</small>
           </div>
           <div className="flex items-center space-x-3.5">
-            <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1/edit">
               Edit
             </Link>
             <DeleteButton />
-            <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1">
               Lihat Lengkap
             </Link>
           </div>
@@ -56,11 +56,11 @@ export default function Tasks() {
             <small>Diunggah pada 19 Februari 2024 21:30</small>
           </div>
           <div className="flex items-center space-x-3.5">
-            <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1/edit">
               Edit
             </Link>
             <DeleteButton />
-            <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1">
               Lihat Lengkap
             </Link>
           </div>
@@ -71,11 +71,11 @@ export default function Tasks() {
             <small>Diunggah pada 19 Februari 2024 21:30</small>
           </div>
           <div className="flex items-center space-x-3.5">
-            <Link className="hover:text-primary" href="/mata-kuliah/edit/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1/edit">
               Edit
             </Link>
             <DeleteButton />
-            <Link className="hover:text-primary" href="/mata-kuliah/detail/1">
+            <Link className="hover:text-primary" href="/mata-kuliah/1/tugas/1">
               Lihat Lengkap
             </Link>
           </div>
