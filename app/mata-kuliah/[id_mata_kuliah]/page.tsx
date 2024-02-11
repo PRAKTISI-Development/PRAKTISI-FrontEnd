@@ -1,5 +1,5 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
-import TaskTabs from '@/components/pages/subject/SubjectTabs'
+import SubjectTabs from '@/components/pages/subject/SubjectTabs'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function InformationPage() {
         </div>
       </div>
 
-      <TaskTabs />
+      <SubjectTabs />
     </>
   )
 }

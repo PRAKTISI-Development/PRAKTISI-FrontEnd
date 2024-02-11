@@ -16,9 +16,9 @@ export default function InformationPage() {
   return (
     <>
       <Breadcrumb
-        pageName="Jadwal"
-        pages={['Jadwal', 'Detail']}
-        previousPageUrl="/jadwal"
+        pageName="Pertemuan 1"
+        pages={['Mata kuliah', 'PPW A2 2022', 'Pertemuan 1']}
+        previousPageUrl="/mata-kuliah/1"
       />
 
       <div className="card mb-5">

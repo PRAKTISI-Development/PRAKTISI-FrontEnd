@@ -1,10 +1,8 @@
 'use client'
 
-import React from 'react';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import React from 'react'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function DeleteButton() {
   const showSwal = () => {
@@ -17,5 +15,5 @@ export default function DeleteButton() {
     })
   }
 
-  return <FontAwesomeIcon cursor="pointer" icon={faTrashAlt} onClick={showSwal} />;
+  return <p className="cursor-pointer select-none hover:text-primary" onClick={showSwal}>Hapus</p>;
 }

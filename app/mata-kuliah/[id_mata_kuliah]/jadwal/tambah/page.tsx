@@ -15,30 +15,15 @@ export default function AddInformationPage() {
   return (
     <>
       <Breadcrumb
-        pageName="Buat Jadwal"
-        pages={['Jadwal', 'Buat jadwal']}
-        previousPageUrl="/jadwal"
+        pageName="Buat jadwal"
+        pages={['Mata kuliah', 'PPW A2 2022', 'Buat jadwal']}
+        previousPageUrl="/mata-kuliah/1"
       />
 
       <div className="flex flex-col gap-9">
         <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
           <form action="#">
             <div className="p-6.5">
-              <div className="mb-4.5">
-                <label className="mb-2.5 block text-black dark:text-white">
-                  Mata Kuliah <span className="text-meta-1">*</span>
-                </label>
-                <Select
-                  name="matkul"
-                  placeholder="Mata Kuliah"
-                  options={[{
-                    value: '1', label: 'Dasar-dasar Pemrograman',
-                  }, {
-                    value: '2', label: 'Algoritma dan Struktur Data'
-                  }]}
-                />
-              </div>
-
               <div className="mb-4.5">
                 <label className="mb-2.5 block text-black dark:text-white">
                   Tanggal <span className="text-meta-1">*</span>
