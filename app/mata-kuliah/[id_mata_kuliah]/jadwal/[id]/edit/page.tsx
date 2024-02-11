@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import Editor from '@/components/Editor'
 import Select from '@/components/Select'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAdd } from '@fortawesome/free-solid-svg-icons'
+import { faPencil } from '@fortawesome/free-solid-svg-icons'
 
 export const metadata: Metadata = {
   title: 'PRAKTISI | Jadwal',
@@ -15,9 +15,9 @@ export default function AddInformationPage() {
   return (
     <>
       <Breadcrumb
-        pageName="Buat Jadwal"
-        pages={['Jadwal', 'Buat jadwal']}
-        previousPageUrl="/jadwal"
+        pageName="Edit jadwal"
+        pages={['Mata kuliah', 'PPW A2 2022', 'Edit jadwal']}
+        previousPageUrl="/mata-kuliah/1"
       />
 
       <div className="flex flex-col gap-9">
@@ -122,8 +122,8 @@ export default function AddInformationPage() {
               </div>
 
               <button type="submit" className="flex w-full justify-center items-center rounded bg-primary p-3 font-medium text-gray">
-                <FontAwesomeIcon icon={faAdd} />
-                <span className="ml-3">Buat Jadwal</span>
+                <FontAwesomeIcon icon={faPencil} />
+                <span className="ml-3">Edit Jadwal</span>
               </button>
             </div>
           </form>

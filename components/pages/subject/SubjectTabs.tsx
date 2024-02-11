@@ -4,8 +4,9 @@ import React, { useState } from 'react'
 import Students from './Students'
 import Tasks from './Tasks'
 import Grades from './Grades'
+import Schedules from './Schedules'
 
-export default function TaskTabs() {
+export default function SubjectTabs() {
   const [selectedTab, setSelectedTab] = useState(1)
 
   return (
@@ -23,12 +24,19 @@ export default function TaskTabs() {
           className={`rounded-md px-4 py-3 text-sm font-medium hover:bg-primary hover:text-white dark:hover:bg-primary md:text-base lg:px-6 shadow-default ${selectedTab == 2 ? 'bg-primary text-white' : 'bg-white dark:bg-meta-4 text-black dark:text-white'}`}
           onClick={() => setSelectedTab(2)}
         >
-          Tugas
+          Pertemuan
         </button>
         <button
           type="button"
           className={`rounded-md px-4 py-3 text-sm font-medium hover:bg-primary hover:text-white dark:hover:bg-primary md:text-base lg:px-6 shadow-default ${selectedTab == 3 ? 'bg-primary text-white' : 'bg-white dark:bg-meta-4 text-black dark:text-white'}`}
           onClick={() => setSelectedTab(3)}
+        >
+          Tugas
+        </button>
+        <button
+          type="button"
+          className={`rounded-md px-4 py-3 text-sm font-medium hover:bg-primary hover:text-white dark:hover:bg-primary md:text-base lg:px-6 shadow-default ${selectedTab == 4 ? 'bg-primary text-white' : 'bg-white dark:bg-meta-4 text-black dark:text-white'}`}
+          onClick={() => setSelectedTab(4)}
         >
           Penilaian
         </button>
@@ -36,7 +44,8 @@ export default function TaskTabs() {
 
       {(() => {
         if (selectedTab == 1) return <Students />
-        if (selectedTab == 2) return <Tasks />
+        if (selectedTab == 2) return <Schedules />
+        if (selectedTab == 3) return <Tasks />
         return <Grades />
       })()}
     </>
