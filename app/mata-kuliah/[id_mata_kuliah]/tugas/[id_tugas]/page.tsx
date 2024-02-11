@@ -1,16 +1,15 @@
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb'
-import TaskTabs from '@/components/pages/subject/SubjectTabs'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'PRAKTISI | Mata Kuliah',
+  title: 'PRAKTISI | Tugas',
   description: ''
 }
 
-export default function InformationPage() {
+export default function TaskPage() {
   return (
     <>
       <Breadcrumb
@@ -45,8 +44,8 @@ export default function InformationPage() {
           </h4>
         </div>
 
-        <div className="flex flex-col items-start overflow-x-scroll xl:items-stretch xl:overflow-x-visible">
-          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(300px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+        <div className="flex flex-col items-start overflow-x-scroll">
+          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
             <p className="font-medium">No</p>
             <p className="font-medium">NIM</p>
             <p className="font-medium">Nama</p>
@@ -54,7 +53,7 @@ export default function InformationPage() {
             <p className="font-medium">Aksi</p>
           </div>
           
-          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(300px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
+          <div className="grid grid-cols-[minmax(80px,80px),repeat(4,minmax(200px,1fr))] border-t border-stroke py-4.5 px-4 dark:border-strokedark md:px-6 2xl:px-7.5">
             <p className="text-sm text-black dark:text-white">
               1
             </p>
@@ -68,7 +67,7 @@ export default function InformationPage() {
               20 Februari 2024 19:20
             </p>
             <div className="flex space-x-3.5">
-              <Link href="/">
+              <Link href="/mata-kuliah/1/tugas/1/pengumpulan/1">
                 <FontAwesomeIcon icon={faEye} />
               </Link>
             </div>
