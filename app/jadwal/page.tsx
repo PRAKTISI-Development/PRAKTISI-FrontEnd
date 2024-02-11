@@ -63,11 +63,11 @@ export default function InformationPage() {
                 HyperText Markup Language (HTML)
               </p>
               <div className="flex items-center space-x-3.5">
-                <Link href="/jadwal/edit/1">
+                <Link href="/jadwal/1/edit">
                   <FontAwesomeIcon icon={faPencilAlt} />
                 </Link>
                 <DeleteButton />
-                <Link href="/jadwal/detail/1">
+                <Link href="/jadwal/1">
                   <FontAwesomeIcon icon={faEye} />
                 </Link>
               </div>
